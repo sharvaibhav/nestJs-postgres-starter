@@ -1,0 +1,14 @@
+http:
+  host: 'localhost'
+  port: 8080
+
+db:
+  postgres:
+    url: 'localhost'
+    port: 5432
+    database: 'todos'
+    database_user: 'postgres'
+    database_password: 'mysecretpassword'
+
+  sqlite:
+    database: 'sqlite.db'

@@ -5,7 +5,11 @@
   "username": "postgres",
   "password": "mysecretpassword",
   "database": "todos",
-  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "entities": ["dist/**/*.entity.js"],
+  "migrations": ["dist/src/migration/**/*.js"],
   "synchronize": true,
-  "autoLoadEntities": true
+  "autoLoadEntities": true,
+  "cli": {
+      "migrationsDir": "src/migration"
+  }
 }

@@ -1,24 +1,24 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-export class User {
+export class Task {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  firstName: string;
+  taskName: string;
 
   @Column()
-  lastName: string;
+  taskType: string;
 
   @Column()
-  address: string;
+  created: Date;
 
   @Column()
-  city: string;
+  lastUpdated: Date;
 
   @Column()
-  gender: string;
+  completed: boolean;
 
   @Column({ default: true })
   isActive: boolean;
